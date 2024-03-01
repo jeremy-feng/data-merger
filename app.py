@@ -23,7 +23,9 @@ class MyDict(dict):
 st.title("合并数据表格")
 
 uploaded_files = st.file_uploader(
-    "上传一个或多个 Excel 或 CSV 文件", type=["xlsx", "csv"], accept_multiple_files=True
+    "上传一个或多个 Excel 或 CSV 文件",
+    type=["xlsx", "xls", "csv"],
+    accept_multiple_files=True,
 )
 
 if uploaded_files:
